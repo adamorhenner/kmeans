@@ -22,6 +22,11 @@ public class KMeans {
         // Inicialização dos clusters
         initializeClusters();
 
+/*A iteração máxima definida como 100 é um limite para controlar o número máximo de iterações que o algoritmo K-means executará.
+
+No K-means, a cada iteração, os pontos são atribuídos aos clusters mais próximos e os centros dos clusters são recalculados com base nos pontos atribuídos a eles. Esses passos são repetidos até que não ocorram mais mudanças nos centros dos clusters ou até atingir o número máximo de iterações.
+Definir um limite para o número de iterações é importante para evitar que o algoritmo entre em um loop infinito ou continue executando desnecessariamente quando os centros dos clusters não estão mudando significativamente.
+No caso do código fornecido, o limite de iterações definido é de 100. Isso significa que o algoritmo será executado no máximo 100 vezes, mesmo que não ocorram mais mudanças nos clusters. Essa é uma escolha arbitrária e pode ser ajustada de acordo com a natureza dos dados e os requisitos específicos do problema.*/
         int iteration = 0;
         boolean isUpdated;
         do {

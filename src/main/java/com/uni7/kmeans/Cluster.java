@@ -46,6 +46,7 @@ public class Cluster {
         if (numPoints > 0) {
             double newCenterX = sumX / numPoints;
             double newCenterY = sumY / numPoints;
+            // Faça o novo Centróide C1 ter os valores das médias calculadas em 5.1 e 5.2
             center = new Point(newCenterX, newCenterY);
         }
     }
